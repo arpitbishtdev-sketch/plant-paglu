@@ -74,9 +74,7 @@ export default function Home() {
         <div className="overlay">
           <h1>{slides[index].title}</h1>
           <p>{slides[index].subtitle}</p>
-          <button onClick={() => navigate("/shop?category=all")}>
-            Shop Now
-          </button>
+          <button onClick={() => navigate("/shop")}>Shop Now</button>
         </div>
       </section>
 
