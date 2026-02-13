@@ -1,17 +1,14 @@
 /* Sidebar layout */
-/* .filters {
+.filters {
   width: 270px;
   padding: 30px 25px;
-
   position: sticky;
-  top: 120px; 
+  top: 120px;
   height: calc(100vh - 120px);
-
-  overflow-y: auto;  
+  overflow-y: auto;
   align-self: start;
-
   border-right: 1px solid #eee;
-} */
+}
 
 .filter-list,
 .color-row {
@@ -113,49 +110,5 @@
     width: 220px;
     padding: 25px 18px;
     top: 110px;
-  }
-}
-
-@media (max-width: 768px) {
-  .filters {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    transform: translateY(100%);
-    width: 100%;
-    height: 85vh;
-    background: #ffffff;
-    border-radius: 20px 20px 0 0;
-    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.15);
-    transition: transform 0.35s ease;
-    z-index: 1001;
-    padding: 40px 20px 40px;
-    overflow-y: auto;
-  }
-
-  /* When open */
-  .filters.active {
-    transform: translateY(0);
-  }
-
-  /* Drag indicator */
-  .filters::before {
-    content: "";
-    width: 60px;
-    height: 5px;
-    background: #ccc;
-    border-radius: 10px;
-    position: absolute;
-    top: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .filter-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(3px);
-    z-index: 1000;
   }
 }

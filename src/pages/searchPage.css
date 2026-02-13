@@ -53,4 +53,20 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .layout {
+    grid-template-columns: 1fr;
+    padding: 120px 20px 40px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .mobile-filter-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
 }

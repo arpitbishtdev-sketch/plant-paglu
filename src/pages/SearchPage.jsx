@@ -55,11 +55,13 @@ export default function SearchPage() {
           />
         )}
 
-        <Filters
-          products={products}
-          setFiltered={setFiltered}
-          closeFilter={() => setFilterOpen(false)}
-        />
+        <div className={`filters-wrapper ${filterOpen ? "active" : ""}`}>
+          <Filters
+            products={products}
+            setFiltered={setFiltered}
+            closeFilter={() => setFilterOpen(false)}
+          />
+        </div>
 
         <div className="grid">
           {filtered.map((p) => (
