@@ -134,7 +134,7 @@ const ProductDetail = () => {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/plantpagluhere/"
                   target="_blank"
                   rel="noreferrer"
                   className="social-circle instagram"
