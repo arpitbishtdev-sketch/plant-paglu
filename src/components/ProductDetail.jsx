@@ -5,6 +5,16 @@ import Footer from "../components/Footer";
 import "./productDetail.css";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
+const message = encodeURIComponent(
+  `Hi Plant Paglu 🌿,
+
+I found your store online and I'm interested in your plants.
+
+Please share more details.
+
+Thank you!`,
+);
+
 const ProductDetail = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === id);
@@ -84,7 +94,7 @@ const ProductDetail = () => {
 
             <div className="action-row">
               <a
-                href="https://wa.me/1234567890"
+                href={`https://wa.me/919205152397?text=${message}`}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-whatsapp-main"
@@ -102,7 +112,7 @@ const ProductDetail = () => {
                 Questions? Contact us via WhatsApp:
               </p>
               <a
-                href="https://wa.me/1234567890"
+                href={`https://wa.me/919205152397?text=${message}`}
                 target="_blank"
                 rel="noreferrer"
                 className="whatsapp-btn"
