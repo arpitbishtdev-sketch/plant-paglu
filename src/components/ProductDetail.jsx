@@ -101,10 +101,6 @@ const ProductDetail = () => {
               >
                 WhatsApp Enquiry
               </a>
-
-              <button className="btn-wishlist">
-                <span className="heart-icon">❤</span>
-              </button>
             </div>
 
             <div className="whatsapp-section">
