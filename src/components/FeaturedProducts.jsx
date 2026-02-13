@@ -11,7 +11,7 @@ export default function FeaturedProducts() {
       <h2 className="featured-title">Featured Products</h2>
 
       <div className="grid">
-        {products.slice(0, 9).map((product) => (
+        {products.slice(0, 8).map((product) => (
           <div
             className="card"
             key={product.id}
