@@ -125,12 +125,27 @@ export default function Navbar() {
       <div className={`mobile-menu ${open ? "show" : ""}`}>
         <FaTimes className="close" onClick={() => setOpen(false)} />
 
-        <Link to="/shop?category=indoor">Indoor Plants</Link>
-        <Link to="/shop?category=table-desk">Table Desk</Link>
-        <Link to="/shop?category=office-space">Office Space</Link>
-        <Link to="/shop?category=gifting">Home Decor & Gifting</Link>
-        <Link to="/shop?category=ceramic">Ceramic Pots & Planters</Link>
-        <Link to="/shop?category=self-watering">
+        <Link to="/shop?category=indoor" onClick={() => setOpen(false)}>
+          Indoor Plants
+        </Link>
+
+        <Link to="/shop?category=table-desk" onClick={() => setOpen(false)}>
+          Table Desk
+        </Link>
+
+        <Link to="/shop?category=office-space" onClick={() => setOpen(false)}>
+          Office Space
+        </Link>
+
+        <Link to="/shop?category=gifting" onClick={() => setOpen(false)}>
+          Home Decor & Gifting
+        </Link>
+
+        <Link to="/shop?category=ceramic" onClick={() => setOpen(false)}>
+          Ceramic Pots & Planters
+        </Link>
+
+        <Link to="/shop?category=self-watering" onClick={() => setOpen(false)}>
           Soil Mix & Self Watering Pots
         </Link>
 

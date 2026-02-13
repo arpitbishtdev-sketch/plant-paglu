@@ -25,9 +25,11 @@ export default function Shop() {
       );
     }
 
-    if (search) {
+    if (search && search.trim() !== "") {
       filtered = filtered.filter((p) =>
-        p.tags?.some((tag) => tag.toLowerCase().includes(search.toLowerCase())),
+        p.tags?.some((tag) =>
+          tag.toLowerCase().includes(search.toLowerCase().trim()),
+        ),
       );
     }
 
@@ -46,23 +48,20 @@ export default function Shop() {
 
       <div style={{ marginTop: "30px" }}>
         {images.length === 0 ? (
-          <h3 style={{ color: "#777" }}>
-            Sorry, we don't have this right now.
-          </h3>
+          <div
+            style={{
+              padding: "60px 0",
+              fontSize: "18px",
+              color: "#777",
+            }}
+          >
+            Sorry, we don’t have this right now.
+          </div>
         ) : (
           <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-            {images.map((img) =>
-              img.public_id ? (
-                <img
-                  key={img.public_id}
-                  src={`https://res.cloudinary.com/dirixa5no/image/upload/${img.public_id}.jpg`}
-                  alt=""
-                  width="250"
-                />
-              ) : (
-                <div key={img.id}>{img.name}</div>
-              ),
-            )}
+            {images.map((product) => (
+              <div key={product.id}>{product.name}</div>
+            ))}
           </div>
         )}
       </div>
