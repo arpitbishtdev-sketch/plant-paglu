@@ -1,10 +1,13 @@
 import "./filters.css";
 
-export default function Filters({ setFiltered, products }) {
+export default function Filters({ setFiltered, products, closeFilter }) {
   const filterByTag = (tag) => {
-    if (tag === "all") return setFiltered(products);
+    if (tag === "all") setFiltered(products);
+    else setFiltered(products.filter((p) => p.tags?.includes(tag)));
 
-    setFiltered(products.filter((p) => p.tags?.includes(tag)));
+    if (window.innerWidth <= 768) {
+      closeFilter();
+    }
   };
 
   return (
