@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./home.css";
+import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
 const tplant =
