@@ -3,7 +3,7 @@ export const products = [
     id: "p001-aglaonema-pink",
     name: "Pink Ceramic Aglaonema Desk Plant",
     category: "table-desk",
-    price: 799,
+    price: 350,
     description:
       "Pink ceramic pot with Aglaonema plant, perfect for desks and indoor spaces.",
 
@@ -31,7 +31,7 @@ export const products = [
     id: "p002-aglaonema-cream",
     name: "Cream Ceramic Aglaonema Desk Plant",
     category: "table-desk",
-    price: 799,
+    price: 350,
     description:
       "Cream ceramic pot with Aglaonema plant, ideal for desks and offices.",
 
@@ -56,7 +56,7 @@ export const products = [
     id: "p003-aglaonema-mint",
     name: "Mint Ceramic Aglaonema Desk Plant",
     category: "table-desk",
-    price: 799,
+    price: 350,
     description:
       "Mint ceramic pot with Aglaonema plant, perfect for modern desks.",
 
@@ -81,7 +81,7 @@ export const products = [
     id: "p002-gifting-white",
     name: "White Ceramic Gifting Plant",
     category: "gifting",
-    price: 699,
+    price: 499,
     description:
       "Premium white ceramic money plant specially packed for gifting purposes.",
 
@@ -99,7 +99,7 @@ export const products = [
     id: "p003-money-plant-red",
     name: "Red Plastic Desk Money Plant",
     category: "table-desk",
-    price: 499,
+    price: 250,
     description:
       "Durable red plastic pot money plant, ideal for desks and office spaces. Lightweight and vibrant design.",
 
@@ -124,7 +124,7 @@ export const products = [
     id: "p003-money-plant-green",
     name: "Green Plastic Desk Money Plant",
     category: "table-desk",
-    price: 499,
+    price: 250,
     description:
       "Durable green plastic pot money plant, ideal for desks and office spaces. Lightweight and vibrant design.",
 
@@ -148,7 +148,7 @@ export const products = [
     id: "p003-money-plant-brown",
     name: "Brown Plastic Desk Money Plant",
     category: "table-desk",
-    price: 499,
+    price: 250,
     description:
       "Durable brown plastic pot money plant, ideal for desks and office spaces. Lightweight and earthy design.",
 
@@ -173,7 +173,7 @@ export const products = [
     id: "p004-self-watering-jade",
     name: "Self Watering Jade Plant (Ceramic Pot)",
     category: "self-watering",
-    price: 899,
+    price: 450,
     description:
       "Modern self-watering ceramic pot with jade plant, perfect for desks and office spaces.",
 
@@ -200,7 +200,7 @@ export const products = [
     id: "p005-self-watering-aglaonema-white",
     name: "Self Watering Snow White Aglaonema",
     category: "self-watering",
-    price: 899,
+    price: 450,
     description:
       "Elegant self-watering ceramic pot with snow white aglaonema for desks and offices.",
 
@@ -227,7 +227,7 @@ export const products = [
     id: "p006-self-watering-aglaonema-pink",
     name: "Self Watering Pink Aglaonema",
     category: "self-watering",
-    price: 899,
+    price: 450,
     description:
       "Premium self-watering ceramic pot with pink aglaonema, ideal for desks.",
 
@@ -281,7 +281,7 @@ export const products = [
     id: "p007-jade-plant-mud-pot",
     name: "Jade Plant in Mud Pot",
     category: "table-desk",
-    price: 599,
+    price: 250,
     description:
       "Healthy jade plant in a classic mud pot. Perfect for desks, shelves, and indoor decor. Easy to maintain and ideal for beginners.",
 
@@ -307,7 +307,7 @@ export const products = [
     id: "p009-jade-plant-designer-pot",
     name: "Jade Plant in Designer Ceramic Pot",
     category: "table-desk",
-    price: 699,
+    price: 450,
     description:
       "Healthy jade plant in a beautiful designer ceramic pot with floral detailing. Perfect for desks, shelves, and gifting. Easy to maintain and beginner-friendly.",
 
@@ -333,7 +333,7 @@ export const products = [
     id: "p010-jade-plant-blue-pot",
     name: "Jade Plant in Blue Ceramic Pot",
     category: "table-desk",
-    price: 699,
+    price: 250,
     description:
       "Healthy jade plant in a stylish blue ceramic pot with white dot detailing. Perfect for desks, shelves, and modern home decor. Easy to maintain and beginner-friendly.",
 
@@ -359,7 +359,7 @@ export const products = [
     id: "p011-jade-plant-pink-pot",
     name: "Jade Plant in Pink Ceramic Pot",
     category: "table-desk",
-    price: 649,
+    price: 250,
     description:
       "Compact jade plant in a soft pink ceramic pot. Perfect for desks, bedside tables, and gifting. Easy to maintain and ideal for beginners.",
 
