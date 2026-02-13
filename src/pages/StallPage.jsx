@@ -49,8 +49,13 @@ export default function StallPage() {
       {/* CARDS */}
       <section className="stall-cards">
         <div className="stall-card">
-          <h4>📍 Location</h4>
-          <p>DLF Mall of India, Ground Floor</p>
+          <h4>📍 Exhibition Stall</h4>
+          <p>
+            <strong>Location:</strong> DLF Mall of India – Exhibition Stall
+          </p>
+          <p>
+            <strong>Stall Name:</strong> Plant Paglu Here
+          </p>
         </div>
 
         <div className="stall-card">

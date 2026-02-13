@@ -74,10 +74,18 @@ export default function EnquiryPage() {
           {/* RIGHT — INFO + MAP */}
           <div className="enquiry-side">
             <div className="info-card">
-              <h4>Visit Our Stall</h4>
-              <p>DLF Mall, Delhi</p>
-              <p>Ground Floor — Plant Stall</p>
-              <p>📞 +91 XXXXX XXXXX</p>
+              <h4>Visit Our Exhibition Stall</h4>
+              <p>
+                <strong>Location:</strong> DLF Mall of India
+              </p>
+              <p>
+                <strong>Area:</strong> Exhibition Stall – Ground Floor
+              </p>
+              <p>
+                <strong>Stall Name:</strong> Plant Paglu Here
+              </p>
+
+              <p>📞 +91 92051 52397</p>
               <p>✉️ blacksoun2305@gmail.com</p>
             </div>
 

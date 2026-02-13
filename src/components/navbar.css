@@ -280,32 +280,12 @@
   display: none;
 }
 
-/* ================= IPAD ================= */
-@media (max-width: 1024px) {
-  .navbar {
-    padding: 12px 20px;
-  }
-
-  .nav-links {
-    gap: 18px; /* thoda kam spacing */
-    font-size: 14px; /* text slightly smaller */
-  }
-
-  .nav-links a {
-    white-space: nowrap; /* text break na ho */
-  }
-
-  .logo {
-    font-size: 20px; /* thoda compact */
-  }
-}
-
 /* ===== MOBILE ONLY ===== */
 .mobile-search {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-center,
   .desktop-only,
   .divider,
