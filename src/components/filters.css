@@ -112,3 +112,10 @@
     top: 110px;
   }
 }
+
+@media (max-width: 768px) {
+  .filters {
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
