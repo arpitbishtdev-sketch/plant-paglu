@@ -1,0 +1,155 @@
+.pcard {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.35s ease;
+  cursor: pointer;
+}
+
+.pcard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE PART */
+.pcard-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* square box = game changer */
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+/* .pcard-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: 0.4s ease;
+} */
+
+.pcard-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pcard:hover img {
+  transform: scale(1.08);
+}
+
+/* OVERLAY ICONS */
+.pcard-overlay {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.35s ease;
+}
+
+.pcard:hover .pcard-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.icon.eye:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* Default state */
+.icon.whatsapp {
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.icon.whatsapp svg {
+  fill: #000 !important;
+  color: #000 !important;
+  transition: all 0.3s ease;
+}
+
+/* Hover state */
+.icon.whatsapp:hover {
+  background: #25d366 !important;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.45) !important;
+}
+
+.icon.whatsapp:hover svg {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* INFO PART */
+.pcard-info {
+  padding: 18px 18px 22px;
+}
+
+.pcard-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+  min-height: 44px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+/* =========================
+   IPAD
+========================= */
+@media (max-width: 1024px) {
+  /* .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  } */
+
+  .pcard-info h4 {
+    font-size: 15px;
+  }
+
+  .price {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 15px 30px;
+  } */
+
+  .pcard-info h4 {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+}

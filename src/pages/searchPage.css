@@ -1,0 +1,105 @@
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  padding: 140px 60px 60px; /* navbar space */
+  background: #f6f7f9;
+  align-items: start;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  align-content: start; /* cards upar se start */
+  min-height: 100%; /* full height le */
+}
+
+/* Hide mobile filter bar on desktop */
+.mobile-filter-bar {
+  display: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    padding: 120px 15px 40px;
+  }
+
+  /* Hide desktop sidebar */
+  .filters-wrapper {
+    display: none;
+  }
+
+  /* Bottom sheet */
+  .filters-wrapper.active {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 85vh;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.15);
+    z-index: 1001;
+    overflow-y: auto;
+    padding: 40px 20px;
+  }
+
+  /* Drag indicator */
+  .filters-wrapper.active::before {
+    content: "";
+    width: 60px;
+    height: 5px;
+    background: #ccc;
+    border-radius: 10px;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Overlay */
+  .filter-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    z-index: 1000;
+  }
+
+  /* Grid adjust */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .mobile-filter-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .mobile-filter-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: none;
+    background: #ffffff;
+    color: #222;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: all 0.25s ease;
+  }
+
+  .mobile-filter-btn:active {
+    transform: scale(0.96);
+  }
+}

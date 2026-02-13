@@ -1,0 +1,223 @@
+/* ===== PREMIUM BACKGROUND ===== */
+.enquiry {
+  min-height: 100vh;
+  padding: 160px 20px 100px;
+  display: flex;
+  justify-content: center;
+
+  background: radial-gradient(circle at 20% 20%, #f2f6f3, #eef3ef, #f7f7f7);
+}
+
+/* ===== GRID LAYOUT ===== */
+.enquiry-layout {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 60px;
+  width: 1200px;
+  max-width: 95%;
+  align-items: stretch;
+}
+
+/* ===== LEFT CARD (GLASS PREMIUM) ===== */
+.enquiry-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+  padding: 64px;
+  box-shadow:
+    0 60px 120px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.enquiry-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== HEADING ===== */
+.enquiry-card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.sub {
+  color: #6b6b6b;
+  margin-bottom: 50px;
+}
+
+/* ===== FORM ===== */
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.row {
+  display: flex;
+  gap: 22px;
+}
+
+/* ===== INPUTS PREMIUM ===== */
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 20px 22px;
+  border-radius: 16px;
+  border: 1px solid #e6e6e6;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  background: #ffffffcc;
+  transition: 0.35s ease;
+}
+
+.enquiry-form textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+.enquiry-form input:hover,
+.enquiry-form textarea:hover {
+  border-color: #cfcfcf;
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  outline: none;
+  border-color: #1b5e20;
+  box-shadow: 0 0 0 5px rgba(27, 94, 32, 0.08);
+  transform: scale(1.02);
+}
+
+/* ===== BUTTON ===== */
+.enquiry-form button {
+  margin-top: 14px;
+  padding: 18px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: white;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+
+.enquiry-form button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(27, 94, 32, 0.35);
+}
+
+/* ===== RIGHT SIDE ===== */
+.enquiry-side {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ===== INFO CARD ===== */
+.info-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(18px);
+  border-radius: 28px;
+  padding: 42px 38px;
+  box-shadow:
+    0 40px 90px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: 0.4s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+}
+
+.info-card h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+
+.info-card p {
+  color: #444;
+  font-size: 15px;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ===== MAP ===== */
+.map-card {
+  flex: 1;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.1);
+}
+
+.map-card iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(15%);
+  transition: 0.6s ease;
+}
+
+.map-card:hover iframe {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+}
+
+/* ===== TOAST ===== */
+.Toastify__toast {
+  border-radius: 16px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+.Toastify__toast--success {
+  border-left: 6px solid #1b5e20;
+}
+
+/* ================= RESPONSIVE MAGIC ================= */
+
+/* Tablet (iPad) */
+@media (max-width: 1024px) {
+  .enquiry-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .enquiry-card {
+    padding: 50px 36px;
+  }
+
+  .enquiry-card h2 {
+    font-size: 38px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .enquiry {
+    padding: 120px 14px 80px;
+  }
+
+  .enquiry-card {
+    padding: 36px 22px;
+  }
+
+  .enquiry-card h2 {
+    font-size: 30px;
+  }
+
+  .info-card {
+    padding: 28px 22px;
+  }
+}

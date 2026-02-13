@@ -1,0 +1,25 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== REMOVE HORIZONTAL SCROLL ===== */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* scrollbar gone */
+}
+
+/* React root full width */
+#root {
+  width: 100%;
+}
+
+/* Optional: smoother font rendering */
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,162 @@
+.footer {
+  background: #fff;
+  color: #222;
+  padding-top: 110px;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===== TOP LAYOUT ===== */
+.footer-top {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 0 80px 90px;
+}
+
+/* SIDE COLUMNS */
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: #6e6666;
+}
+
+.footer-col p {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #888;
+}
+
+/* ALIGNMENTS */
+.footer-col:first-child {
+  text-align: left;
+}
+
+.footer-col:last-child {
+  text-align: right;
+}
+
+/* CENTER */
+.footer-center {
+  text-align: center;
+}
+
+.footer-center h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.footer .social-icons a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50% !important;
+  background: #f3f3f3 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 18px;
+  transition: 0.35s ease;
+  text-decoration: none;
+}
+
+/* Base hover lift */
+.footer .social-icons a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+/* FACEBOOK */
+.footer .social-icons a:nth-child(2):hover {
+  background: #1877f2 !important;
+  box-shadow: 0 10px 24px rgba(24, 119, 242, 0.35);
+}
+
+/* INSTAGRAM (premium gradient) */
+.footer .social-icons a:nth-child(1):hover {
+  background: radial-gradient(
+    circle at 30% 110%,
+    #fdf497 0%,
+    #fdf497 8%,
+    #fd5949 30%,
+    #d6249f 60%,
+    #285aeb 90%
+  ) !important;
+  box-shadow: 0 10px 24px rgba(214, 36, 159, 0.35);
+}
+
+/* WHATSAPP */
+.footer .social-icons a:nth-child(3):hover {
+  background: #25d366;
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
+}
+
+/* ===== BOTTOM ===== */
+.footer-bottom {
+  border-top: 1px solid #eee;
+  margin-top: 50px;
+  padding: 30px 0;
+  text-align: center;
+  color: #777;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .footer-center {
+    grid-column: span 2;
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .footer-col {
+    margin-top: 20px; /* dono blocks ko neeche lao */
+  }
+
+  .footer-col:first-child,
+  .footer-col:last-child {
+    text-align: center;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    padding: 0 25px 70px;
+    gap: 60px;
+  }
+
+  /* 🔥 MAIN FIX */
+  .footer-col,
+  .footer-col:first-child,
+  .footer-col:last-child {
+    text-align: center;
+  }
+
+  .footer-col h4 {
+    margin-bottom: 14px;
+  }
+
+  .footer-col p {
+    line-height: 1.7;
+  }
+}

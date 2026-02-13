@@ -1,0 +1,388 @@
+:root {
+  --primary-green: #84a305;
+  --whatsapp-green: #25d366;
+  --text-gray: #666;
+  --border-light: #eee;
+}
+
+.product-page-container {
+  display: flex;
+  justify-content: center;
+  padding: 150px 20px 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* --- Left Column: Images --- */
+.product-image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main-image-container {
+  position: relative;
+  background-color: #f9f9f9;
+  border: 1px solid var(--border-light);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.badge-soldout {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--primary-green);
+  color: white;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.thumb-wrapper {
+  min-width: 120px;
+  height: 120px;
+  border: 1px solid var(--border-light);
+  cursor: pointer;
+}
+
+.thumb-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-wrapper:hover {
+  border-color: var(--primary-green);
+}
+
+/* --- Right Column: Info --- */
+.product-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.product-title {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.product-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primary-green);
+  margin: 0;
+}
+
+.product-description {
+  color: var(--text-gray);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.utility-links {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: #333;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 20px;
+}
+
+.action-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn-soldout {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 12px 60px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: not-allowed;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.btn-wishlist {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--primary-green);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* --- WhatsApp Button --- */
+.whatsapp-section {
+  margin-top: 20px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border-light);
+}
+
+.contact-text {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #333; /* Default neutral color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: var(--whatsapp-green); /* Becomes original color on hover */
+}
+
+/* --- Social Icons --- */
+.share-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Base circle */
+.social-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.social-circle:hover {
+  transform: translateY(-3px);
+}
+
+/* FACEBOOK */
+.social-circle.facebook:hover {
+  background: #1877f2 !important;
+  border-color: #1877f2 !important;
+
+  color: #fff !important;
+}
+
+/* INSTAGRAM */
+.social-circle.instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  ) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+/* WHATSAPP */
+.social-circle.whatsapp:hover {
+  background: #25d366 !important;
+  color: #fff;
+  border-color: #25d366 !important;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4) !important;
+}
+
+.social-circle svg {
+  color: inherit !important;
+  fill: currentColor !important;
+  transition: all 0.3s ease;
+}
+
+.social-circle i {
+  font-size: 16px;
+}
+
+.btn-whatsapp-main {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 12px 60px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+  flex-grow: 1;
+  max-width: 300px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.btn-whatsapp-main:hover {
+  background-color: var(--whatsapp-green);
+}
+
+.thumbnail-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.thumb-arrow {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f1f1;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb-arrow:hover {
+  background: var(--primary-green);
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .product-page-container {
+    padding: 120px 30px 40px;
+  }
+
+  .product-wrapper {
+    gap: 30px;
+  }
+
+  .product-title {
+    font-size: 22px;
+  }
+
+  .product-price {
+    font-size: 20px;
+  }
+
+  .btn-whatsapp-main {
+    padding: 12px 40px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-page-container {
+    padding: 100px 15px 30px;
+  }
+
+  .product-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .main-image-container {
+    aspect-ratio: 1 / 1;
+  }
+
+  .thumbnail-wrapper {
+    gap: 10px;
+  }
+
+  .thumb-wrapper {
+    min-width: 80px;
+    height: 80px;
+  }
+
+  .thumb-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .product-title {
+    font-size: 20px;
+  }
+
+  .product-price {
+    font-size: 18px;
+  }
+
+  .product-description {
+    font-size: 13px;
+  }
+
+  .utility-links {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .action-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-whatsapp-main {
+    max-width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .btn-wishlist {
+    width: 100%;
+    height: 45px;
+    border-radius: 12px;
+  }
+
+  .share-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

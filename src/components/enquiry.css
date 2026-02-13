@@ -1,0 +1,153 @@
+.enquiry-strip {
+  padding: 140px 20px;
+  background: #ffffff;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+/* Heading */
+.enquiry-strip h2 {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.enquiry-strip h2 span {
+  color: #1b5e20;
+}
+
+/* Premium bar */
+.enquiry-bar {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 28px 34px;
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: linear-gradient(145deg, #ffffff, #f7f7f7);
+  border: 1px solid #ececec;
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+
+/* hover luxury lift */
+.enquiry-bar:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.08),
+    0 0 0 1px #1b5e20 inset;
+}
+
+/* icon */
+.enquiry-bar svg {
+  font-size: 24px;
+  color: #1b5e20;
+  flex-shrink: 0;
+}
+
+/* text */
+.enquiry-bar span {
+  flex: 1;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  color: #666;
+}
+
+/* CTA looks premium */
+.enquiry-bar button {
+  border: none;
+  background: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 14px;
+  color: #111;
+  position: relative;
+  cursor: pointer;
+}
+
+/* elegant underline animation */
+.enquiry-bar button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #1b5e20;
+  transition: 0.3s ease;
+}
+
+.enquiry-bar:hover button::after {
+  width: 100%;
+}
+
+/* ================== TABLET (iPad) ================== */
+@media (max-width: 1024px) {
+  .enquiry-strip {
+    padding: 110px 24px;
+  }
+
+  .enquiry-strip h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .enquiry-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 26px 26px;
+  }
+
+  .enquiry-bar span {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .enquiry-bar button {
+    align-self: flex-start;
+    margin-top: 6px;
+  }
+}
+
+/* ================== MOBILE ================== */
+@media (max-width: 600px) {
+  .enquiry-strip {
+    padding: 90px 18px;
+  }
+
+  .enquiry-strip h2 {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 28px;
+  }
+
+  .enquiry-bar {
+    border-radius: 16px;
+    padding: 22px 20px;
+    gap: 14px;
+  }
+
+  .enquiry-bar svg {
+    font-size: 20px;
+  }
+
+  .enquiry-bar span {
+    font-size: 15px;
+  }
+
+  .enquiry-bar button {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}

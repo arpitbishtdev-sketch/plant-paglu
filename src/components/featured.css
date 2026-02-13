@@ -1,0 +1,198 @@
+.featured {
+  padding: 120px 0;
+  background: #fff;
+}
+
+.featured-title {
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 80px;
+  font-family: "Playfair Display", serif;
+}
+
+/* GRID */
+.grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 30px !important;
+}
+
+/* CARD */
+.card {
+  max-width: 250px;
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  transition: 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE FULL AREA */
+.img-box {
+  position: relative;
+  height: 260px;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top; /* 🔥 MAGIC LINE */
+  transition: 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #111;
+  color: #fff;
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+/* HOVER LAYER */
+.hover-layer {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+.card:hover .hover-layer {
+  opacity: 1;
+}
+
+.hover-layer svg {
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hover-layer svg:hover {
+  color: #1b5e20;
+  transform: scale(1.2);
+}
+
+/* TEXT */
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 15px;
+}
+
+.new {
+  color: #1b5e20;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.old {
+  text-decoration: line-through;
+  color: #888;
+}
+
+@media (max-width: 899px) {
+  .featured {
+    padding: 80px 16px;
+  }
+
+  .featured-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important; /* 🔥 2 cards */
+    gap: 18px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .img-box {
+    height: 280px; /* thoda compact */
+  }
+
+  .card-content {
+    padding: 14px;
+  }
+
+  .card-content h4 {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 13px;
+  }
+}
+
+/* ================= MOBILE (2 cards) ================= */
+@media (max-width: 600px) {
+  .featured {
+    padding: 80px 16px;
+  }
+
+  .featured-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important; /* 🔥 2 cards */
+    gap: 18px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .img-box {
+    height: 280px; /* thoda compact */
+  }
+
+  .card-content {
+    padding: 14px;
+  }
+
+  .card-content h4 {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 13px;
+  }
+}
